@@ -2,6 +2,14 @@
 On examining the 2022 league of legends dataset, we aim to answer the following questions: Looking at tier-one professional leagues, which league has the most “action-packed” games? Is the amount of “action” in this league significantly different than in other leagues? 
 
 ## Introduction and Question Identification
+The dataset that we have chosen is the League of Legends dataset where we chose to answer the question: Out of the tier-one professional leagues, which league has the most “action-packed” games? Is the amount of “action” in this league significantly different than in other leagues?
+We chose to determine the game's action by using the team kills per minute column. By doing so, we can direct enthusiastic LoL viewers to a novel and action-heavy form of League of Leagues that they probably haven’t watched before.  In our dataset, we used the columns:
+gameid: the id of the game that the row of information belongs to
+league: the regional league the that match is participating in
+team kpm: the kills per minute of a team
+
+We took only the information that belongs to the teams in tier 1 leagues and combined the rows based on gameid to get a concise row of information for each match. With this we have 3039 rows or matches to analyze.
+
 
 ## Cleaning and EDA
 Data Cleaning for Assessment of Missingness:
