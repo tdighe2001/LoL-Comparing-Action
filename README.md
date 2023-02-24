@@ -63,7 +63,7 @@ We could see a large discrepancy between VCS and non VCS matches in previous biv
 | ('top', 'Blue')  |       31.0384 |
 | ('top', 'Red')   |       30.7046 |
 
-2. Win rate by champion and patch - By grouping the data by champion and patch, you can see how often each champion was played in each patch and how often they won. This could give you insight into which champions were strongest in each patch. Since this dataset is extremely big, we have just included the top 10 champions, i.e those who had a win rate of 100%.
+2. Win rate by champion and patch - By grouping the data by champion and patch, you can see how often each champion was played in each patch and how often they won. This could give you insight into which champions were strongest in each patch. Since this dataset is extremely big, we have just included the top 10 champions, i.e those who had a win rate of 100%. This table shows the first 10 entries.
 
 |                         |   result |
 |:------------------------|---------:|
