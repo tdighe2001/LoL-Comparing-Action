@@ -136,7 +136,28 @@ Like in the ‘datacompleteness’ case, we use absolute difference in proportio
 On conducting the permutation test, we obtain the p-value of 1 for a 5% significance level. Thus, we fail to reject the null hypothesis and say that the missingness of ‘split’ values does not depend on the values in ‘side’.
 
 ## Hypothesis Testing
+| is_vcs   |   team kpm |
+|:---------|-----------:|
+| False    |     0.8351 |
+| False    |     1.2465 |
+| False    |     0.6339 |
+| False    |     0.502  |
+| False    |     0.8526 |
+
+Null Hypothesis: In tier 1 leagues, the action (team kpm/kills per minute) of non VCS games and VCS games have the same distribution.
+
+Alternative Hypothesis: In tier 1 leagues, the VCS league has more action (team kpm/kills per minute) than non VCS games.
+
+Test Statistic: Difference in group means
+<h3 style="text-align: center;">mean teamkpm in vcs matches - mean teamkpm in non vcs matches</h3>
+
+Significance Level: 0.05
+
+To conduct the permutation test we accessed only the columns of is_vcs and teamkpm. To determine the numerical difference between the distributions of the two groups we used the test statistic of the difference in group means. The permutation testing consisted of 500 repetitions of shuffling the teamkpm column and calculating the difference in group means between non vcs and vcs teamkpms. We chose a significance level of 0.05 to be the threshold of the permutation test and ended up getting a p-value of 0.00.
+
 <iframe src="Assets/diff_group_mean.html" width=800 height=600 frameBorder=0></iframe>
+
+** Based on the results of the permutation test, we can reject the null hypothesis that the two groups of team kpm come from the same distribution.
 
 
 
