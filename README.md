@@ -137,6 +137,7 @@ On conducting the permutation test, we obtain the p-value of 1 for a 5% signific
 
 ## Hypothesis Testing
 
+
 | is_vcs   |   team kpm |
 |:---------|-----------:|
 | False    |     0.8351 |
@@ -144,6 +145,7 @@ On conducting the permutation test, we obtain the p-value of 1 for a 5% signific
 | False    |     0.6339 |
 | False    |     0.502  |
 | False    |     0.8526 |
+
 
 Null Hypothesis: In tier 1 leagues, the action (team kpm/kills per minute) of non VCS games and VCS games have the same distribution.
 
