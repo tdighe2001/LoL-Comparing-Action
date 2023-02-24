@@ -43,6 +43,7 @@ We could see a large discrepancy between VCS and non VCS matches in previous biv
 
 ### Interesting Aggregates
 1. Average vision score by position and side - This could give you insight into which positions and sides tend to place more wards and control wards, which can be a valuable piece of information in the game. Here we see that ‘teams’ tend to place more wards and control wards by an extremely high margin. But, we cannot consider them because it is not an actual position. So, we look at the next highest -  ‘jng’. Thus, the position ’jng’ tends to place and control the most wards. We also see that blue teams appear to consistently place more wards and control wards.
+
 |                  |   visionscore |
 |:-----------------|--------------:|
 | ('bot', 'Blue')  |       38.6675 |
@@ -57,7 +58,9 @@ We could see a large discrepancy between VCS and non VCS matches in previous biv
 | ('team', 'Red')  |      223.075  |
 | ('top', 'Blue')  |       31.0384 |
 | ('top', 'Red')   |       30.7046 |
+
 2. Win rate by champion and patch - By grouping the data by champion and patch, you can see how often each champion was played in each patch and how often they won. This could give you insight into which champions were strongest in each patch. Since this dataset is extremely big, we have just included the top 10 champions, i.e those who had a win rate of 100%.
+
 |                         |   result |
 |:------------------------|---------:|
 | ('Zyra', 12.21)         |        1 |
@@ -81,12 +84,14 @@ For our Assessment of missingness, we decided to look at the “split” column.
 
 Let’s examine the ‘datacompleteness’ case.
 We first examine the proportion of complete values when split is null and split is false.
+
 | null_split   |   datacompleteness |
 |:-------------|-------------------:|
 | False        |           0.798296 |
 | True         |           0.97648  |
 
 Since ‘datacompleteness’ values vary significantly, we can rule out MCAR. We can also rule out MD because there is no way to predict what the value in 'split' may be depending on the data completeness. This leaves MAR and NMAR. We hypothesize that the data is MAR because even though the ‘datacompleteness’ is only partial when the split is either spring/summer, all of the missing values occur when ‘datacomplenetess’ is complete. Thus, the missingness of the value is not related to the actual unreported value nor does there appear to be a relationship between the propensity of a value to be missing and its value.
+
 | datacompleteness   |   split_missing = False |   split_missing = True |
 |:-------------------|------------------------:|-----------------------:|
 | False              |                0.201704 |              0.0235203 |
@@ -105,11 +110,14 @@ On conducting the permutation test, we obtain the p-value of 0 for a 5% signific
 
 Now, we examine the ‘side’ case.
 Like the ‘datacompleteness’ case, we first examine the proportion of complete values when split is null and split is false.
+
 | null_split   |   side |
 |:-------------|-------:|
 | False        |    0.5 |
 | True         |    0.5 |
+
 We see that ‘side’ values have the exact same proportions. Since the proportion of blue/reds appears to be the same whether or not the split values are missing, we hypothesize that 'split' is MCAR , i.e does not depend on team. This is further illustrated by the following aggregate and bar graph:
+
 | side   |   split_missing = False |   split_missing = True |
 |:-------|------------------------:|-----------------------:|
 | False  |                     0.5 |                    0.5 |
