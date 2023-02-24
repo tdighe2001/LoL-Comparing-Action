@@ -37,6 +37,8 @@ Each match contains 12 rows of data, 10 for players and 2 for teams. We decided 
 For both cases, all missing data was replaced with np.nans.
 
 ### Univariate Analysis
+<iframe src="Assets/kills.html" width=800 height=600 frameBorder=0></iframe>
+
 ### Bivariate Analysis
 <iframe src="Assets/cond-dist-team-kpm.html" width=800 height=600 frameBorder=0></iframe>
 We could see a large discrepancy between VCS and non VCS matches in previous bivariate analytics and wanted to visualize the conditional distributions of VCS and non VCS matches in terms of team kpm. There seems to be a difference in their distributions with VCS having more team kpm on average.
@@ -130,6 +132,10 @@ Null Hypothesis: The missingness of values in the column ‘split’ is independ
 Like in the ‘datacompleteness’ case, we use absolute difference in proportions as our test statistic.
 
 On conducting the permutation test, we obtain the p-value of 1 for a 5% significance level. Thus, we fail to reject the null hypothesis and say that the missingness of ‘split’ values does not depend on the values in ‘side’.
+
+##Hypothesis Testing
+<iframe src="Assets/diff_group_mean.html" width=800 height=600 frameBorder=0></iframe>
+
 
 
 
