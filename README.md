@@ -136,6 +136,7 @@ Like in the ‘datacompleteness’ case, we use absolute difference in proportio
 On conducting the permutation test, we obtain the p-value of 1 for a 5% significance level. Thus, we fail to reject the null hypothesis and say that the missingness of ‘split’ values does not depend on the values in ‘side’.
 
 ## Hypothesis Testing
+
 | is_vcs   |   team kpm |
 |:---------|-----------:|
 | False    |     0.8351 |
