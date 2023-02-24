@@ -101,7 +101,7 @@ Since ‘datacompleteness’ values vary significantly, we can rule out MCAR. We
 
 On grouping the data differently, we see that the missing split values tend to disproportionately occur when data completeness is complete. The two columns look very different, which is evidence that 'split''s missingness does depend on 'datacompleteness’.
 Here is the data in the form of a bar chart
-**INSERT BAR CHART**
+**INSERT DATACOMP BAR CHART**
 Thus, we hypothesisize that the missing values are MAR. 
 
 Null Hypothesis: The missingness of values in the column ‘split’ is independent of the values in the column ‘datacompleteness’. 
@@ -125,7 +125,7 @@ We see that ‘side’ values have the exact same proportions. Since the proport
 | False  |                     0.5 |                    0.5 |
 | True   |                     0.5 |                    0.5 |
 
-**INSERT BAR CHART**
+**INSERT SIDE SPLIT BAR CHART**
 We see that the values are exactly evenly split.
 Null Hypothesis: The missingness of values in the column ‘split’ is independent of the values in the column ‘side’.
 
