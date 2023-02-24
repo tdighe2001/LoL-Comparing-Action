@@ -41,7 +41,7 @@ For both cases, all missing data was replaced with np.nans.
 
 ### Univariate Analysis
 <iframe src="Assets/kills.html" width=800 height=600 frameBorder=0></iframe>
-On average each game consists of around 
+In tier one matches, there is a normal distribution for amount of kills with a mean or centered around 26 kills per match.
 
 ### Bivariate Analysis
 <iframe src="Assets/cond-dist-team-kpm.html" width=800 height=600 frameBorder=0></iframe>
@@ -131,7 +131,6 @@ We see that ‘side’ values have the exact same proportions. Since the proport
 
 <iframe src="Assets/side_dist.html" width=800 height=600 frameBorder=0></iframe>
 We see that the values are exactly evenly split.
-
 Null Hypothesis: The missingness of values in the column ‘split’ is independent of the values in the column ‘side’.
 
 Like in the ‘datacompleteness’ case, we use absolute difference in proportions as our test statistic.
