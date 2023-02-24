@@ -131,6 +131,7 @@ We see that ‘side’ values have the exact same proportions. Since the proport
 
 <iframe src="Assets/side_dist.html" width=800 height=600 frameBorder=0></iframe>
 We see that the values are exactly evenly split.
+
 Null Hypothesis: The missingness of values in the column ‘split’ is independent of the values in the column ‘side’.
 
 Like in the ‘datacompleteness’ case, we use absolute difference in proportions as our test statistic.
