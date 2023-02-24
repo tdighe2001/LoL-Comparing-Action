@@ -16,6 +16,15 @@ Data Cleaning for Assessment of Missingness:
 For the purpose of Assessment of Missingness, we extracted three columns from the original dataframe: ‘split’, ‘datacompleteness’ and ‘side’. In order to make permutation testing easier, we turned ‘datacompleteness’ and ‘side’ to bool columns where ‘complete’ and ‘Blue’ were True and ‘partial’ and ‘Red’ were False for ‘datacompleteness’ and ‘side’ respectively. 
 
 Data Cleaning for hypothesis testing:
+
+| league   |   gamelength |   kills |   team kpm |   barons |   damagetochampions |     dpm |   damagetakenperminute | is_vcs   |
+|:---------|-------------:|--------:|-----------:|---------:|--------------------:|--------:|-----------------------:|:---------|
+| LPL      |         1365 |      19 |     0.8351 |        1 |               70503 | 3099.03 |                4805.14 | False    |
+| LPL      |         1444 |      30 |     1.2465 |        1 |               94875 | 3942.17 |                6133.21 | False    |
+| LPL      |         1893 |      20 |     0.6339 |        2 |              102576 | 3251.22 |                4995.75 | False    |
+| LPL      |         2271 |      19 |     0.502  |        2 |              135067 | 3568.48 |                5167.08 | False    |
+| LPL      |         1900 |      27 |     0.8526 |        2 |              115066 | 3633.66 |                4841.34 | False    |
+
 Each match contains 12 rows of data, 10 for players and 2 for teams. We decided to take only the rows for team data for our analysis. Then to answer the hypothesis we must only look at tier one teams and filter it by whether they were one of the 9 tier one leagues. After getting the two rows for the tier one teams, we then combined both rows to get a single row for each match. For the EDA analysis for hypothesis testing, we queried the only relevant columns that contained complete data for all tier one leagues: league, gamelength, kills, team kpm, barons, damagetochampions, damagetakenperminute. These columns were relevant in trying to find interesting differences in leagues. When combining the team data we must be wary of duplicate data and in this case gamelength. The gamelength column was the same for both teams in a match as it indicated the length of the same match that both teams participated in. To maintain correctness in our data, the resulting gamelength column was halved. During the hypothesis testing, we created a new column which contained a boolean of whether the match played was part of the VCS league or not. This was to be able to measure the difference between the distributions of VCS and non-VCS matches.
 
 
