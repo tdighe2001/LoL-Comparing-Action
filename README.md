@@ -149,7 +149,7 @@ Null Hypothesis: In tier 1 leagues, the action (team kpm/kills per minute) of no
 Alternative Hypothesis: In tier 1 leagues, the VCS league has more action (team kpm/kills per minute) than non VCS games.
 
 Test Statistic: Difference in group means
-<p style="text-align: center;">$$mean teamkpm in vcs matches - mean teamkpm in non vcs matches$$</p>
+<p style="text-align: center;">mean teamkpm in vcs matches - mean teamkpm in non vcs matches</p>
 
 Significance Level: 0.05
 
@@ -157,7 +157,7 @@ To conduct the permutation test we accessed only the columns of is_vcs and teamk
 
 <iframe src="Assets/diff_group_mean.html" width=800 height=600 frameBorder=0></iframe>
 
-** Based on the results of the permutation test, we can reject the null hypothesis that the two groups of team kpm come from the same distribution.
+**Based on the results of the permutation test, we can reject the null hypothesis that the two groups of team kpm come from the same distribution.
 
 
 
