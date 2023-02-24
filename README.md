@@ -149,7 +149,7 @@ Null Hypothesis: In tier 1 leagues, the action (team kpm/kills per minute) of no
 Alternative Hypothesis: In tier 1 leagues, the VCS league has more action (team kpm/kills per minute) than non VCS games.
 
 Test Statistic: Difference in group means
-<h3 style="text-align: center;">mean teamkpm in vcs matches - mean teamkpm in non vcs matches</h3>
+<p style="text-align: center;">$$mean teamkpm in vcs matches - mean teamkpm in non vcs matches$$</p>
 
 Significance Level: 0.05
 
