@@ -101,7 +101,7 @@ Since ‘datacompleteness’ values vary significantly, we can rule out MCAR. We
 
 On grouping the data differently, we see that the missing split values tend to disproportionately occur when data completeness is complete. The two columns look very different, which is evidence that 'split''s missingness does depend on 'datacompleteness’.
 Here is the data in the form of a bar chart
-**INSERT DATACOMP BAR CHART**
+<iframe src="Assets/datacomp_dist.html" width=800 height=600 frameBorder=0></iframe>
 Thus, we hypothesisize that the missing values are MAR. 
 
 Null Hypothesis: The missingness of values in the column ‘split’ is independent of the values in the column ‘datacompleteness’. 
@@ -125,7 +125,7 @@ We see that ‘side’ values have the exact same proportions. Since the proport
 | False  |                     0.5 |                    0.5 |
 | True   |                     0.5 |                    0.5 |
 
-**INSERT SIDE SPLIT BAR CHART**
+<iframe src="Assets/side_dist.html" width=800 height=600 frameBorder=0></iframe>
 We see that the values are exactly evenly split.
 Null Hypothesis: The missingness of values in the column ‘split’ is independent of the values in the column ‘side’.
 
@@ -133,6 +133,8 @@ Like in the ‘datacompleteness’ case, we use absolute difference in proportio
 
 On conducting the permutation test, we obtain the p-value of 1 for a 5% significance level. Thus, we fail to reject the null hypothesis and say that the missingness of ‘split’ values does not depend on the values in ‘side’.
 
+## Permutation Testing
+<iframe src="Assets/diff_group_mean.html" width=800 height=600 frameBorder=0></iframe>
 
 
 
