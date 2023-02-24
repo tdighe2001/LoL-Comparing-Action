@@ -13,7 +13,9 @@ We took only the information that belongs to the teams in tier 1 leagues and com
 
 ## Cleaning and EDA
 Data Cleaning for Assessment of Missingness:
+
 For the purpose of Assessment of Missingness, we extracted three columns from the original dataframe: ‘split’, ‘datacompleteness’ and ‘side’. In order to make permutation testing easier, we turned ‘datacompleteness’ and ‘side’ to bool columns where ‘complete’ and ‘Blue’ were True and ‘partial’ and ‘Red’ were False for ‘datacompleteness’ and ‘side’ respectively. This DataFrame contains 149232 rows and 4 columns.
+
 |    | split   | datacompleteness   | side   | split_missing   |
 |---:|:--------|:-------------------|:-------|:----------------|
 |  0 | Spring  | True               | True   | False           |
