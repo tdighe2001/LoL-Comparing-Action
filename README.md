@@ -22,7 +22,7 @@ Each match contains 12 rows of data, 10 for players and 2 for teams. We decided 
 For both cases, all missing data was replaced with np.nans.
 ### Univariate Analysis
 ### Bivariate Analysis
-<iframe src="assets/cond-dist-team-kpm.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="Assets/cond-dist-team-kpm.html" width=800 height=600 frameBorder=0></iframe>
 We could see a large discrepancy between VCS and non VCS matches in previous bivariate analytics and wanted to visualize the conditional distributions of VCS and non VCS matches in terms of team kpm. There seems to be a difference in their distributions with VCS having more team kpm on average.
 
 ### Interesting Aggregates
